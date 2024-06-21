@@ -1,0 +1,71 @@
+/* board.css */
+
+.board-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .board-container form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .board-container form input[type="text"],
+  .board-container form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .board-container form input[type="text"] {
+    flex: 1;
+  }
+  
+  .board-container form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .board-container form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .board-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .board-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .board-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .board-container {
+      padding: 15px;
+    }
+  
+    .board-lists {
+      grid-template-columns: 1fr;
+    }
+  }
+  

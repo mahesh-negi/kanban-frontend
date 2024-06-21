@@ -1,0 +1,66 @@
+/* list.css */
+
+.list-container {
+    max-width: 800px; /* Increased max-width for more space */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-container form {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .list-container form input[type="text"],
+  .list-container form button {
+    padding: 12px; /* Increased padding for inputs and buttons */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .list-container form input[type="text"] {
+    flex: 1;
+  }
+  
+  .list-container form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-container form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .list-items {
+    margin-top: 20px; /* Increased margin-top for list items */
+  }
+  
+  .list-item {
+    background-color: #fff;
+    padding: 20px; /* Increased padding for list items */
+    margin-bottom: 15px; /* Increased margin-bottom for list items */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Increased margin-bottom for list item titles */
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .list-container {
+      padding: 15px;
+    }
+  }
+  
